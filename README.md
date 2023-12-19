@@ -1,6 +1,5 @@
 [![author](https://img.shields.io/badge/author-mateusramos-red.svg)](https://www.linkedin.com/in/mateus-simoes-ramos/) ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 # Análise de um Dataset de Ordens de Pedido de uma loja online usando Excel
-
 <p align="center">
   <img alt="Dataset Inicial" width="60%" src="https://i.postimg.cc/K8XSJGvq/Dataset-inicial.png">
 </p>
@@ -106,8 +105,9 @@ function main(workbook: ExcelScript.Workbook) {
 ```
 
 Então vamos ver a "magia" acontecendo. Após aproximadamente 8 minutos, os 9994 registros estavam preenchidos, quanto tempo você demoraria para preencher essa quantidade de registros?
+
 <p align="center">
-  <img alt="Dataset Inicial" width="75%" src="https://i.postimg.cc/C156tzM5/8-execucao-automacao-scor.gif">
+  <img alt="execucao automacao scorsese" width="90%" src="https://i.imgur.com/d8uzqUo.gif">
 </p>
 
 
