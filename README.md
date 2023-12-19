@@ -73,6 +73,7 @@ Alguns registros ficaram com a letra minúscula quando substituímos os caracter
   <img alt="Dataset Inicial" width="25%" src="https://i.postimg.cc/BvWTgtCg/8-Resultado-Power-Query.jpg">
 </p>
 <br>
+<br>
 
 ### 2. Automação de preenchimento de dados
 Importei os registros para a planilha e temos uma nova aba com os registros dos nomes dos cliente. Logo após foi necessário usar a função PROCV e SEERRO. Usei os dados inseridos do pdf como matriz onde o Costumer ID se comporta como chave e o Customer Name se comporta como valor de uma matriz, e depois populei todos os 9994 registros da planilha Dataset usando um script de macro. A função "SEERRO" serve para tratamento de erro caso tenha um código errado, e retorna um valor vazio como resultado, isso será útil posteriormente. 
@@ -103,11 +104,42 @@ function main(workbook: ExcelScript.Workbook) {
 	}
 }
 ```
+<br>
 
 Então vamos ver a "magia" acontecendo. Após aproximadamente 8 minutos, os 9994 registros estavam preenchidos, quanto tempo você demoraria para preencher essa quantidade de registros?
 
 <p align="center">
   <img alt="execucao automacao scorsese" width="90%" src="https://i.imgur.com/d8uzqUo.gif">
 </p>
+
+Lembra da função SEERRO? Agora vamos verificar se tem algum valor nulo...
+Temos aqui 13 valores nulos que representam 0,13% de todos os registros e nessa ocasião optei por excluir essas linhas. Também foi analisado se tem algum nome repetido na aba Client_names.
+<p align="center">
+  <img alt="execucao automacao scorsese" width="70%" src="https://i.postimg.cc/d0tJCPC2/9-valores-nulos.png">
+</p>
+
+> Dados/Filtrar/Desmarcar Selecionar Tudo/Marcar Vazias
+>
+> Página Inicial/Formatação Condicional/Regras de Realce das Células/Valores Duplicados
+<br>
+<br>
+
+### 3. Analisando tabelas e criando tabelas dinâmicas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
