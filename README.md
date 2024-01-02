@@ -1,14 +1,14 @@
 [![author](https://img.shields.io/badge/author-mateusramos-red.svg)](https://www.linkedin.com/in/mateus-simoes-ramos/) ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 # Análise de um Dataset de Ordens de Pedido de uma loja online usando Excel
 <p align="center">
-  <img alt="Dataset Inicial" width="60%" src="https://i.postimg.cc/K8XSJGvq/Dataset-inicial.png">
+  <img alt="Dataset Inicial" width="85%" src="https://github.com/MateusRamos10/Excel_Clients/assets/43836795/9b526b74-a74c-4644-a6e6-ff5d83740101">
 </p>
 
 ## Objetivo do Estudo
-O objetivo deste projeto é realizar uma análise abrangente dos dados de pedidos de uma loja online, buscando insights que possam orientar decisões estratégicas individualmente para os clientes e apresentar as informações em um dashboard interativo.
+O objetivo deste projeto é realizar uma análise abrangente dos dados de pedidos de uma loja online, buscando insights que possam orientar decisões estratégicas e apresentar informações em um dashboard interativo.
 
-**Para acessar o projeto completo, clique no link abaixo:**
- - [Projeto no Excel(OneDrive)](https://unipead-my.sharepoint.com/personal/mateus_ramos2_aluno_unip_br/_layouts/15/Doc.aspx?sourcedoc={7916d3b7-4548-4b83-b8ef-114df9611579}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True)
+**Para acessar o arquivo no OneDrive, clique no link abaixo:**
+ - [Projeto no Excel(OneDrive)](https://unipead-my.sharepoint.com/:x:/g/personal/mateus_ramos2_aluno_unip_br/EapeX1Zq55BLujvpwg3pR98BGjdT66UUP_f5Jp_8QzHSsw?e=7UM2Cv)
 
 <!Projeto em Google Sheets também,
 Botão pra pular para os resultados
@@ -32,6 +32,11 @@ Os dados foram obtidos da plataforma [Kaggle](https://www.kaggle.com/). disponib
 ---
 
 ## Mãos a obra...
+
+> Clique aqui para pular o desenvolvimento deste trabalho direto para o Resultado.
+> <br>
+> **[Resultado](#resultado)**
+
 ### 1. Importando e trabalhando com arquivos diferentes
 Logo no início eu precisei mesclar dois arquivos, o Dataset Completo.xlsm estava apenas com o código do cliente e para esse projeto é importante sabermos o nome dos clientes para criar nossas análises e Dashboards.
 <br><br>
@@ -125,10 +130,38 @@ Temos aqui 13 valores nulos que representam 0,13% de todos os registros e nessa 
 <br>
 
 ### 3. Analisando tabelas e criando tabelas dinâmicas
+Aqui é aquele momento quase sem registro, que a gente pensa e pensa e pensa... Mas quero destacar duas tabelas dinâmicas e duas **dicas** que só a experiência traz.
+<p align="center">
+  <img alt="Dataset Inicial" width="75%" src="https://github.com/MateusRamos10/Excel_Clients/assets/43836795/db40dd5f-c361-4d0a-99c6-b531b8a520a8">
+</p>
 
+### 3.1 Tabelas Dinâmicas
+Além de criações de tabelas dinâmicas *linkando* corretamente as colunas, criei a coluna que calcula a positividade.
+Nesse contexto, chamei de positividade todo cliente que teve mais de uma compra no período filtrado.<br>
+De uma maneira bem compreensível, se um cliente comprou em uma data e voltou a comprar em uma outra data, contamos como 1 para positividade, se ele comprou uma única vez e não voltou, a positividade recebe 0, e pra finalizar, usei a função SE para fazer a somatória de todos os registros com 1 subtraindo do total de clientes e temos a nossa positividade.
+<br>
 
+Como eu queria trabalhar com o mapa do país, entendi que esse gráfico ele não pode ser criado a partir de uma tabela dinâmica, o próprio excel recomenda fazer uma cópia desses dados em uma coluna para criar esse gráfico, nas minhas pesquisas vi uma técnica para transformar uma tabela dinâmica em uma simples tabela, porém não obtive sucesso. 
+Então para contornar esse problema e não ficar duplicando dados, eu crie uma coluna onde apenas coloquei o nome do país *United States* e plotei um gráfico dessa coluna e depois adicionei os dados da tabela dinâmica.
 
+<p align="center">
+  <img alt="Dataset Inicial" width="75%" src="https://github.com/MateusRamos10/Excel_Clients/assets/43836795/680b3b4b-2b59-4495-8aef-95c56877cfe1">
+  <img alt="Dataset Inicial" width="60%" src="https://github.com/MateusRamos10/Excel_Clients/assets/43836795/520a0d16-4a35-4a53-97ce-71f301134f50">
+</p>
 
+### 3.2 Conselho de Amigo (Dicas)
+Em vários momentos eu precisei simplesmente começar do zero por que ocorria algum erro que eu não conseguia solucionar, claro que me chateei no início, mas acredito que internalizei melhor tudo o que estava fazendo (extrair o melhor da situação).
+<br>
+
+\#Tip1. Como eu queria fazer um único filtro para todas as tabelas e também já sabia antecipadamente a quantidade de tabelas dinânicas que eu queria fazer, entendi que era melhor eu criar o botão (que na verdade é uma segmentação de dados da tabela) e as 9 tabelas sem registro nenhum, do que criar *uma a uma* e programar individualmente. Em um caso que ao criar 8 tabelas e uma única céluar não ser selecionada ou uma simples coluna a menos, mesmo que eu não a use, a segmentação não vai funcionar e pode trazer uma dorzinha de cabeça, então é melhor pensar antes quais tabelas dinâmicas irá precisar.
+
+\#Tip2. Outro padrão que resolvi adotar é de criar uma aba para simplesmente visualizar as cores do meu dashboard e manter a segurança para não acabar estragando alguma programação do dashboard original.
+Talvez seja a parte que as pessoas mais gostem, e eu demorei muito tempo pensando na harmonia e na mensagem que queria transmitir, mas foi bom testar as cores em uma planilha a parte e sim... Teoria das cores é fundamental e se você ter a curiosidade de ver quais foram as cores do meu primeiro Dashboard pode me enviar uma mensagem, não irei postar aqui rs.
+<p align="center">
+  <img alt="Dataset Inicial" width="75%" src="https://github.com/MateusRamos10/Excel_Clients/assets/43836795/2a7196d1-991f-4706-a33b-7c13aa1b2642">
+</p>
+
+## Resultado <a id="resultado"></a>
 
 
 
