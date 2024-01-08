@@ -8,7 +8,7 @@
 O objetivo deste projeto é realizar uma análise abrangente dos dados de pedidos de uma loja online, buscando insights que possam orientar decisões estratégicas e apresentar informações em um dashboard interativo.
 
 **Para acessar o arquivo no OneDrive, clique no link abaixo:**
- - [Projeto no Excel(OneDrive)](https://unipead-my.sharepoint.com/:x:/g/personal/mateus_ramos2_aluno_unip_br/EapeX1Zq55BLujvpwg3pR98BGjdT66UUP_f5Jp_8QzHSsw?e=7UM2Cv)
+ - [Projeto no Excel(OneDrive)](https://1drv.ms/x/s!AiKF1yOmNO2VmFuJl5Yru03_DieR?e=kZ1J3m)
 
 <!-- COMENTÁRIO Fazer projeto em Google Sheets também
 icone sheets
